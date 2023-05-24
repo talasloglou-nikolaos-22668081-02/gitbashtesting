@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Lists</title>
+</head>
+
+<body>
+    <button type="button" class="collapsible">Όλες οι ασκήσεις</button>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="exercise1.html">Ασκηση 1</a></li>
+                <li><a href="exercise2.html">Ασκηση 2</a></li>
+                <li><a href="exercise3.html">Ασκηση 3</a></li>
+                <li><a href="exercise4.html">Ασκηση 4</a></li>
+                <li><a href="exercise5.html">Ασκηση 5</a></li>
+                <li><a href="exercise6.html">Ασκηση 6</a></li>
+                <li><a href="exercise7.html">Ασκηση 7</a></li>
+                <li><a href="exercise8.html">Ασκηση 8</a></li>
+                <li><a href="exercise9.html">Ασκηση 9</a></li>
+                <li><a href="exercise10.html">Ασκηση 10</a></li>
+                <li><a href="exercise11.html">Ασκηση 11</a></li>
+                <li><a href="exercise12.html">Ασκηση 12</a></li>
+                <li><a href="exercise13.html">Ασκηση 13</a></li>
+                <li><a href="exercise14.html">Ασκηση 14</a></li>
+                <li><a href="exercise15.html">Ασκηση 15</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <img src="images/240px-Troll.png" alt="troll face" width="200" height="150">
+    <br>
+    <img src="images/ac80b74f8d1d49f338555fad04adf9f6.jpg" alt="Nissan GTR R34 Skyline" width="1500" height="850">
+
+
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>

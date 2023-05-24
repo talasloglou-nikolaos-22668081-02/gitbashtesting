@@ -1,0 +1,51 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+a {
+    color: rgb(239, 188, 94);
+}
+
+a:visited {
+    color: cyan;
+}
+
+
+table,
+th,
+tr,
+td {
+    color: white;
+    border: 1px solid #c7c7c7;
+
+}
+
+.collapsible {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #464646;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #333;
+}
